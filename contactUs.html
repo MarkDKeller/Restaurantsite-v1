@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us - Chauncey Creek Lobster Pier</title>
+        
+        <center>
+        <h1>Chauncey Creek Lobster Pier - Established in 1948</h1>
+        </center>
+
+        <hr/>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contactUs.html">Contact Us</a>
+        <hr/>
+        <style>
+            label, p {
+                display: inline-block;
+                width: 575px;
+                text-align: right;
+            }
+            textarea {
+                vertical-align: top;
+            }
+            div {
+                margin-left: 25px;
+            }
+            select {
+                    border:1px solid;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                    padding:2px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="#" method="post">
+            <div>       
+                <label id="fullNameLabel" for="fullName">Name: </label>
+                <input id="fullName" name="fullName" type="text" />
+            </div>
+            <br/>
+
+            <div>
+                <label id="emailLabel" for="email"> Email: </label>
+                <input id="email" name="email" type="text" />
+            </div>
+            <br/>
+            
+            <div>
+                <label id="phoneLabel" for="phone"> Phone: </label>
+                <input id="phone" name="phone" type="text" />
+            </div>
+
+            <div>
+                <p>Reason for Inquiry</p>
+                <select name="Reason">
+                    <option value="Cetering">Catering</option>
+                    <option value="Private Party">Private Party</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            
+            <div>
+                <p>Additional Information: </p>
+                <textarea name="additionalInformation"></textarea><br/>
+            </div>
+    
+            <div><p>Have you been to the restaurant?</p>
+                <input type="radio" name="returnCustomer" value="No" checked/>No
+                <input type="radio" name="returnCustomer" value="Yes"       />Yes
+            </div>
+
+            <div>
+                <p>Best days to contact you:</p>
+                <input type="checkbox" name="contactDays" value="M"/>M
+                <input type="checkbox" name="contactDays" value="T"/>T
+                <input type="checkbox" name="contactDays" value="W"/>W
+                <input type="checkbox" name="contactDays" value="Th"/>Th
+                <input type="checkbox" name="contactDays" value="F"/>F
+            </div>
+            <br/>
+            <div>
+                <center>
+                <input type="submit" id="submitButton" value="Send Request" /><br/>
+                </center>
+            </div>
+        </form>
+    </body>
+    <footer>
+        <center>
+            <hr/>
+            16 Lobster Trap Road, Kittery Point, Maine 03905<br/>
+            (207) 123-4567 
+            <hr/>
+        </center>
+    </footer>
+</html>
